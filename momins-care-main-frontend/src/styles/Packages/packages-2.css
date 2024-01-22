@@ -1,0 +1,144 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Common styles for packages section */
+.Packages-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.packages-logo img {
+  width: 300px;
+}
+
+.packages-my_acc {
+  display: flex;
+  align-items: center;
+}
+
+.packages-my_acc img {
+  width: 25px;
+  margin-right: 20px;
+}
+
+.packages-sub-text {
+  text-align: center;
+  margin: 40px;
+}
+
+.packages-sub-text-choose {
+  color: gray;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.packages-sub-text h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.packages-sub-text h3 .H1 {
+  color: #920606;
+}
+
+.packages-sub-text h3 .H2 {
+  color: #083476;
+}
+
+.y-Or-M {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 90px;
+  border-radius: 20px;
+  font-size: 22px;
+}
+
+.single-package-card {
+  padding: 20px;
+  height: 460px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s;
+}
+
+.single-package-card:hover {
+  transform: scale(1.08) translateY(-35px);
+  background-color: rgb(135, 0, 0);
+  color: white;
+  z-index: 100;
+}
+
+.package-select {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 90px;
+  border-radius: 5px;
+  border-color: #32aebc;
+  font-size: ;
+}
+/* ... (previous CSS rules) */
+
+.package-select {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 90px;
+  border-radius: 5px;
+  border-color: #32aebc;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.package-select:hover {
+  background-color: #32aebc;
+  color: white;
+}
+
+/* Media queries */
+@media screen and(max-width: 950px) {
+  .packages-card {
+    grid-template-columns: repeat(2, 280px);
+  }
+}
+
+@media screen and(max-width: 700px) {
+  .packages-logo img {
+    width: 200px;
+  }
+  .packages-my_acc img {
+    width: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and(max-width: 650px) {
+  .packages-card {
+    grid-template-columns: 280px;
+  }
+}
+
+@media only screen and(max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Additional styles for footer */
+.down-footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.gap-package-bottom {
+  margin-bottom: 30px;
+}

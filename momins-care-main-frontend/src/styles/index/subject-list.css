@@ -1,0 +1,127 @@
+.subject-list-text p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.subject-list-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  grid-template-rows: repeat(2, 230px);
+  grid-gap: 100px;
+  margin-bottom: 170px;
+  justify-content: center;
+}
+.subject-list-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 36px;
+  overflow: hidden;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(162, 218, 255);
+  filter: brightness(98%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  padding: 15px;
+}
+.subject-list-card:hover {
+  scale: 1.1;
+  transform: translateY(-3px);
+  filter: brightness(1.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.subject-list-card-1 {
+  background-image: url("../../assets/subject-bg/physics-1st.png");
+}
+.subject-list-card-2 {
+  background-image: url("../../assets/subject-bg/physics-2nd.png");
+}
+.subject-list-card-3 {
+  background-image: url("../../assets/subject-bg/chemistry-1st.png");
+}
+
+.subject-list-card-4 {
+  background-image: url("../../assets/subject-bg/chemistry-2nd.png");
+}
+.subject-list-card-5 {
+  background-image: url("../../assets/subject-bg/highermath-1st.png");
+}
+.subject-list-card-6 {
+  background-image: url("../../assets/subject-bg/highermath-2nd.png");
+}
+
+/* responcive code */
+@media screen and (max-width: 950px) {
+  .subject-list-text p {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .subject-list-cards {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 250px);
+    grid-gap: 50px;
+    margin-bottom: 100px;
+  }
+  .subject-list-card {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subject-list-text p {
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .subject-list-cards {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 50px;
+    margin-bottom: 100px;
+  }
+  .subject-list-card {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .subject-list-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .subject-list-cards {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, 150px);
+    grid-gap: 50px;
+    margin-bottom: 100px;
+  }
+  .subject-list-card {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .subject-list {
+    padding: 20px;
+  }
+  .subject-list-text p {
+    font-size: 23px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .subject-list-cards {
+    display: block;
+    grid-gap: 50px;
+  }
+  .subject-list-card {
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+}

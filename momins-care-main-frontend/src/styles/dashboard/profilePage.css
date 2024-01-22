@@ -1,0 +1,265 @@
+.profile-parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.profile-myAcc-btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #b91f1f;
+  min-width: 100%;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: c;
+}
+.profile-myAcc-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-3px);
+  scale: 1.05;
+}
+
+.profile-myAcc-btn:active {
+  opacity: 1;
+  transform: translateY(3px);
+  scale: 1;
+}
+
+.profile-myAcc-btn .profile-myAcc-animation {
+  border-radius: 100%;
+  animation: ripple 1s linear infinite;
+}
+
+/* @keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1),
+      0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1),
+      0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1),
+      0 0 0 80px rgba(255, 255, 255, 0);
+  }
+} */
+
+.profile-myAcc-Edit-btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-color);
+  min-width: 100%;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+.profile-myAcc-Edit-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-3px);
+  scale: 1.05;
+}
+
+.profile-myAcc-Edit-btn:active {
+  opacity: 1;
+  transform: translateY(3px);
+  scale: 1;
+}
+
+.profile-myAcc-Edit-btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.5s linear infinite;
+}
+/* ball css */
+.profile-parent {
+  position: relative;
+}
+.bouncingball {
+  width: 0.1px;
+  height: 0.1px;
+  border-radius: 100%;
+  background: #6b98ec9c;
+  background: rgba(255, 255, 255, 0.452);
+  box-shadow: 10px 10px 100px 50px rgb(255, 255, 255);
+  animation: bounce 10s;
+  transform: translateY(0px);
+  animation-iteration-count: infinite;
+  position: absolute;
+  margin: 50px;
+}
+@keyframes bounce {
+  0% {
+    top: 0%;
+    left: 50%;
+    -webkit-animation-timing-function: ease-in;
+  }
+  10% {
+    top: 10%;
+    left: 40%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  20% {
+    left: 300px;
+    top: 30%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  40% {
+    left: 40px;
+    top: 60%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    left: 50%;
+    top: 80%;
+    -webkit-animation-timing-function: ease-in;
+  }
+  60% {
+    top: 70%;
+    left: 60%;
+    -webkit-animation-timing-function: ease-out;
+  }
+  80% {
+    top: 30%;
+    left: 70%;
+    -webkit-animation-timing-function: ease-in;
+  }
+  100% {
+    top: 0%;
+    left: 50%;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+/* button */
+/* external css code */
+.account-area.profile-custom-bg-gray-100 {
+  background-color: #ffffff;
+}
+
+.profile-text-black {
+  color: #000000;
+}
+
+.profile-text-3xl {
+  font-size: 1.875rem;
+}
+
+.profile-font-bold {
+  font-weight: 700;
+}
+
+.profile-mb-4 {
+  margin-bottom: 1rem;
+}
+
+.profile-text-center {
+  text-align: center;
+}
+
+.profile-custom-bg-white {
+  background-color: #082f49;
+}
+
+.profile-rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.profile-custom-shadow-lg {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.profile-p-8 {
+  padding: 2rem;
+}
+
+.profile-w-32 {
+  width: 8rem;
+}
+
+.profile-h-32 {
+  height: 8rem;
+}
+
+.profile-rounded-full {
+  border-radius: 9999px;
+}
+
+.profile-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-text-2xl {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.profile-mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.profile-custom-text-gray-600 {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.profile-mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.profile-myAcc-Edit-btn {
+  /* Add styles for the Edit button */
+  transition: 300ms;
+}
+
+.profile-myAcc-Edit-btn:hover span {
+  background: none;
+}
+
+.profile-myAcc-btn {
+  /* Add styles for the Logout button */
+  transition: 300ms;
+}
+
+.profile-myAcc-btn:hover span {
+  background: none;
+}
+
+/* @media (min-width: 768px) {
+  .profile-myAcc-Edit-btn {
+    font-size: 24px;
+    min-width: 196px;
+  }
+
+  .profile-myAcc-btn {
+    font-size: 24px;
+    min-width: 196px;
+  }
+} */
+
+.profile-animation {
+  /* Add styles for the animation */
+}

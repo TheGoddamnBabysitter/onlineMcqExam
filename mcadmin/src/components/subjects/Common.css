@@ -1,0 +1,318 @@
+#firstChapters {
+    display: none;
+}
+#secondChapters {
+    display: none;
+}
+::-moz-selection {
+    color: white;
+    background: #001f2b;
+}
+
+::selection {
+    color: white;
+    background: #001f2b;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+.textInput {
+    width: 95%;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px 1.2px #3b3b3b91;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+}
+
+input[type="text"],
+textarea {
+    width: 95%;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px 1.2px #3b3b3b91;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border: 2px solid rgba(0, 0, 0, 0.548);
+}
+
+.radioInput {
+    margin: 0 12px;
+}
+
+input[type="radio"] {
+    scale: 1.8;
+    margin-right: 10px;
+    border-color: #001f2b;
+    background-color: #001f2b;
+    border: none;
+    color: black;
+    display: inline-block;
+}
+
+#questionImg {
+    display: none;
+}
+
+input[type="radio"]:checked:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 82%;
+    height: 82%;
+    border: 1px solid #001f2b;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked:after {
+    content: "";
+    position: absolute;
+    top: 18%;
+    left: 18%;
+    width: 50%;
+    height: 50%;
+    background-color: #001f2b;
+    border: 1px solid #001f2b;
+    border-radius: 50%;
+    /* padding: px; */
+}
+
+/* input[type="radio"]:checked {
+} */
+
+textarea {
+    height: 100px;
+    padding: 10px 15px;
+}
+
+.subject-common-main-container {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fd;
+}
+
+.subject-common-container {
+    margin: 100px auto;
+    padding: 45px;
+    width: 600px;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0px 3px 12px 4px #3b3b3b2a;
+    padding-bottom: 40px;
+}
+.queBtn{
+    min-width: 100%;
+    margin: 25px auto;
+    background: #001f2b;
+    color: #fff;
+    border-radius: 7px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+    box-shadow: 0 6px 10px 1px rgba(51, 53, 54, 0.315);
+    text-align: center;
+    margin-bottom: 20px;
+    border: 0.8px solid #a8a8a8c0;
+    cursor: pointer;
+}
+
+
+.queBtn:active {
+    scale: 0.9;
+    transform: translateY(4px);
+}
+#hasImg {
+    min-width: 100%;
+    margin: 25px auto;
+    background: #001f2b;
+    color: #fff;
+    border-radius: 7px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+    box-shadow: 0 6px 10px 1px rgba(51, 53, 54, 0.315);
+    text-align: center;
+    margin-bottom: 20px;
+    border: 0.8px solid #a8a8a8c0;
+    cursor: pointer;
+}
+/* #hasImg:hover {
+    color: #001f2b;
+    background: #fff;
+    box-shadow: 0 12px 10px 1px rgba(51, 53, 54, 0.315);
+} */
+#hasImg:active {
+    scale: 0.9;
+    transform: translateY(4px);
+}
+
+.btn-sub {
+    min-width: 100%;
+    margin: 25px auto;
+    background: #001f2b;
+    color: #fff;
+    border-radius: 7px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+    box-shadow: 0 6px 10px 1px rgba(51, 53, 54, 0.315);
+    text-align: center;
+    margin-bottom: 20px;
+    border: 0.8px solid #a8a8a8c0;
+    cursor: pointer;
+}
+.btn-sub:hover {
+    color: #001f2b;
+    background: #fff;
+    box-shadow: 0 12px 10px 1px rgba(51, 53, 54, 0.315);
+}
+.btn-sub:active {
+    scale: 0.9;
+    transform: translateY(4px);
+}
+
+.input-radio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.input-radio-container h2 {
+    margin-right: 12px;
+}
+
+#firstChapters,
+#secondChapters {
+    /* display: grid; */
+    grid-template: repeat(3, 0.9fr) / repeat(3, 0.9fr);
+}
+
+#firstChapters .radioInput button,
+#secondChapters .radioInput button {
+    min-width: 100%;
+    margin: 15px auto;
+    background: #001f2b;
+    color: #fff;
+    border-radius: 7px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+    box-shadow: 0 6px 10px 1px rgba(51, 53, 54, 0.315);
+    text-align: center;
+    border: 0.8px solid #a8a8a8c0;
+    cursor: pointer;
+}
+
+#firstChapters .radioInput button:hover,
+#secondChapters .radioInput button:hover {
+    color: #001f2b;
+    background: #fff;
+    box-shadow: 0 12px 10px 1px rgba(51, 53, 54, 0.315);
+}
+
+#isQuestion {
+    min-width: 30%;
+    margin: 15px auto;
+    background: #001f2b;
+    color: #fff;
+    border-radius: 7px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+    box-shadow: 0 6px 10px 1px rgba(51, 53, 54, 0.315);
+    text-align: center;
+    border: 0.8px solid #a8a8a8c0;
+    cursor: pointer;
+}
+
+#isQuestion:hover {
+    color: #001f2b;
+    background: #fff;
+    box-shadow: 0 12px 10px 1px rgba(51, 53, 54, 0.315);
+}
+
+.input-topic {
+    margin-top: 15px;
+}
+
+.add-btn {
+    color: #fff;
+    background: #001f2b;
+    padding: 12px 22px;
+    border: none;
+    margin: 15px 10px 25px auto;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-btn:active {
+    scale: 0.9;
+    transform: translateY(4px);
+}
+
+/* 
+responsive code */
+@media only screen and (max-width: 600px) {
+    .subject-common-container {
+        /* scale: 0.8; */
+        margin: 100px 30px;
+        padding: 20px;
+    }
+    input[type="text"],
+    textarea {
+        width: 90%;
+        height: 45px;
+        font-size: 15px;
+    }
+    textarea {
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    * {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .btn-sub {
+        font-size: 15px;
+    }
+    #firstChapters .radioInput button,
+    #secondChapters .radioInput button {
+        font-size: 15px;
+    }
+    .btn-sub {
+        font-size: 15px;
+    }
+}

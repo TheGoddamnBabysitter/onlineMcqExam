@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Modern+Antiqua&display=swap");
+.potential {
+  padding: 20px;
+}
+.potential-div {
+  background-color: #ffffff;
+  height: 300px;
+}
+.potential-logo {
+  padding-top: 100px;
+  padding-left: 300px;
+}
+.potential-logo img {
+  width: 200px;
+}
+.potential-text {
+  font-size: 35px;
+  text-align: center;
+}
+.potential-text p {
+  font-weight: 400;
+  font-family: "JetBrains Mono", monospace;
+}
+/* responcive code */
+@media screen and (max-width: 890px) {
+  .potential-div {
+    height: 200px;
+  }
+  .potential-logo {
+    padding: 20px 0px 10px 20px;
+  }
+  .potential-logo img {
+    width: 150px;
+  }
+  .potential-text {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+}

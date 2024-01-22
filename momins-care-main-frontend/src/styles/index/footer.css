@@ -1,0 +1,133 @@
+/* Style the footer section */
+.footer {
+  margin-top: 30px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 40px 0;
+}
+
+/* Center the content within the footer */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style the upper part of the footer */
+.upper-footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+  justify-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+/* Style the footer logo */
+.colum1-logo img {
+  width: 200px;
+}
+
+/* Style the footer text */
+.colum1-text p {
+  font-size: 20px;
+}
+
+/* Style the links in the footer */
+.column2 ul,
+.column3 ul,
+.column4 ul,
+.column5 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column2 a,
+.column3 a,
+.column4 a,
+.column5 a {
+  color: #3f3f3fb2;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.column2 a:hover,
+.column3 a:hover,
+.column4 a:hover,
+.column5 a:hover {
+  text-decoration: underline;
+}
+
+/* Style the horizontal line */
+.footer hr {
+  border-top: 1px solid hsl(0, 1%, 72%);
+  width: 700px;
+  margin: 50px auto;
+}
+
+/* Style the lower part of the footer */
+.down-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.down-footer p {
+  font-size: 18px;
+}
+
+.down-footer a {
+  color: #6d6a6a;
+  text-decoration: none;
+}
+
+.down-footer a:hover {
+  text-decoration: underline;
+}
+
+/* responcive code */
+@media only screen and (max-width: 870px) {
+  .footer {
+    padding: 20px 0;
+  }
+
+  .upper-footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .colum1-logo {
+    text-align: center;
+  }
+  .colum1-logo img {
+    width: 400px;
+  }
+
+  .colum1-text {
+    text-align: center;
+  }
+
+  .column2,
+  .column3,
+  .column4,
+  .column5 {
+    text-align: center;
+  }
+
+  .footer hr {
+    width: 300px;
+  }
+
+  .down-footer {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .colum1-logo img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .colum1-logo img {
+    width: 200px;
+  }
+}

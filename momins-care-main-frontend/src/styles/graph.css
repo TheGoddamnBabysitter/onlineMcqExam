@@ -1,0 +1,51 @@
+.graph-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  margin-top: 30px;
+  padding: 20px;
+  transition: all 0.5s;
+  width: 90%; /* Use percentage for responsive design */
+  max-width: 700px; /* Maximum width */
+  font-size: 25px;
+  transition: all 0.2s;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.graph-div:hover {
+  scale: 1.05;
+}
+
+.graph {
+  width: 100%; /* Use 100% for responsive design */
+  transition: all 1s;
+}
+
+.animate-on-load {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in-up 1s ease-in-out forwards,
+    scale-up 1s ease-in-out forwards;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes scale-up {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
